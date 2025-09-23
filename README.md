@@ -1,2 +1,2 @@
 # Vapour-Caldeiras-Teste-Alpha
-Algumas coisas por aí!
+Site com interação para almoxarafido (não concluído), possui edição de itens, futuramente adicionar adição de itens.
