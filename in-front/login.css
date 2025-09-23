@@ -1,0 +1,170 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f5f0;
+    transition: background-color 0.5s;
+    flex-direction: column;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+.login-title {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #DC143C;
+    margin-bottom: 5px;
+}
+
+.login-subtitle {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #444;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #FF8C00;
+}
+
+.login-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #FF8C00;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #e57e00;
+}
+
+.login-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.login-links a {
+    color: #DC143C;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.login-links a:hover {
+    text-decoration: underline;
+}
+
+.login-message {
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+/* Modo escuro para a tela de login */
+body.dark-mode {
+    background-color: #121212;
+}
+
+body.dark-mode .login-box {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .login-title {
+    color: #FF8C00;
+}
+
+body.dark-mode .login-subtitle {
+    color: #ccc;
+    border-bottom-color: #444;
+}
+
+body.dark-mode .input-group label {
+    color: #f0f0f0;
+}
+
+body.dark-mode .input-group input {
+    background-color: #2e2e2e;
+    color: #f0f0f0;
+    border-color: #444;
+}
+
+body.dark-mode .login-links a {
+    color: #FF8C00;
+}
+
+.login-message.error {
+    color: #e74c3c;
+}
+
+.login-message.success {
+    color: #2ecc71;
+}
+
+.theme-toggle-btn {
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #FF8C00;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 1000;
+    position: fixed;
+}

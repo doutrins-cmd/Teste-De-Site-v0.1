@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vapour Caldeiras - Estoque</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <div class="header-logo">
+                <h1>Vapour Caldeiras</h1>
+            </div>
+            <nav class="header-nav">
+                <ul>
+                    <li>
+                        <span class="nav-item">Estoque</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-search">
+            <input type="text" id="searchInput" placeholder="Buscar em todas as abas...">
+            <button onclick="search()">Buscar</button>
+            <div id="autocompleteResults" class="autocomplete-results"></div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <main class="content">
+            <section id="estoque" class="tab active">
+                <h2>Estoque do Almoxarifado</h2>
+                <p>Monitore os níveis de estoque de produtos, receba alertas e gerencie a entrada e saída de itens. Otimize sua logística.</p>
+                <div class="stock-list-container" id="stockListContainer">
+                    </div>
+            </section>
+        </main>
+    </div>
+
+    <button id="themeToggle" class="theme-toggle-btn">
+        <i class="fas fa-moon"></i>
+    </button>
+    
+    <div id="editModal" class="edit-form-container" style="display:none;">
+        <div class="edit-form-content">
+            <h3>Editar Item</h3>
+            <form id="editForm">
+                <div class="form-group">
+                    <label for="editName">Nome do Item</label>
+                    <input type="text" id="editName" required>
+                </div>
+                <div class="form-group">
+                    <label for="editQuantity">Quantidade em Estoque</label>
+                    <input type="number" id="editQuantity" required>
+                </div>
+                <div class="form-group">
+                    <label for="editMinQuantity">Quantidade Mínima</label>
+                    <input type="number" id="editMinQuantity" required>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="cancel-button">Cancelar</button>
+                    <button type="submit" class="save-button">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
